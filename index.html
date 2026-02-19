@@ -10,18 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="./images/1024824.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
         <h1>To Do List</h1>
         <form id="todo-form">
-            <input type="text" id="todo-input" placeholder="Todo...">
-            <button type="submit">Add</button>
+            <input type="text" name="todo-input" id="todo-input" placeholder="Enter a task here...">
+            <button class="add-btn" type="submit">Add task</button>
         </form>
-        <ul id="list"></ul>
+        <ul id="todo-list">
+        </ul>
     </div>
+
     <script src="script.js"></script>
 </body>
 
