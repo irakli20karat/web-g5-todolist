@@ -24,18 +24,20 @@ const renderTodos = () => {
 }
 
 const toggleTodo = (id) => {
-    const todo = todos.map((o) =>
-        o.id === id ? {...o, completed: !o.completed} : o
+    const todo = todos.find((o) =>
+        o.id === id
     );
-    todos.splice(0, todos.length, ...todo);
+    todo.completed = !todo.completed;
 
     saveToLocalStorage();
     renderTodos();
 }
 
 const deleteTodo = (id) => {
-    const index = todos.filter((o) => o.id === id)[0];
-    todos.splice(todos.indexOf(index), 1);
+    const index = todos.findIndex((o) =>
+        o.id === id
+    );
+    todos.splice(index, 1);
 
     saveToLocalStorage();
     renderTodos();
