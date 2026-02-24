@@ -11,13 +11,12 @@
 /*#E8E2DB*/
 
 body {
-    background-color: #E8E2DB;
+    background-color:#E8E2DB;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-
 form {
     display: flex;
     gap: 10px;
@@ -69,12 +68,17 @@ ul {
     border-left: 5px solid #fda085;
 }
 
+.date {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: #666666;
+}
+
 .todo-text {
     font-size: 1.1rem;
     color: #333;
     word-break: break-all;
 }
-
 .todo-item.completed {
     background: #e9ecef;
     border-left-color: #28a745;
@@ -91,8 +95,7 @@ ul {
     gap: 5px;
 }
 
-.btn-check,
-.btn-delete {
+.btn-check, .btn-delete {
     padding: 8px;
     border: none;
     border-radius: 5px;
@@ -109,10 +112,5 @@ ul {
     background-color: #dc3545;
 }
 
-.btn-check:hover {
-    background-color: #218838;
-}
-
-.btn-delete:hover {
-    background-color: #c82333;
-}
+.btn-check:hover { background-color: #218838; }
+.btn-delete:hover { background-color: #c82333; }
