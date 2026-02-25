@@ -15,7 +15,7 @@ const renderTodos = () => {
         let date = new Date(todo.date).toDateString();
         const li = document.createElement("li");
         li.className = `todo-item ${todo.completed ? 'completed' : ''}`;
-        li.innerHTML = `<span><p class="date">${date}</p><p>${todo.text}</p></span>
+        li.innerHTML = `<span><p>${todo.text}</p><p class="date">${date}</p></span>
         <div class="actions">
             <button class="btn-check" onclick="doneBtnClickHandler(${todo.id})">done</button>
             <button class="btn-delete" onclick="deleteBtnClickHandler(${todo.id})">remove</button>
